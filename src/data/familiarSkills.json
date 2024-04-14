@@ -28,5 +28,10 @@
     "name": "Nginx",
     "icon": "/images/tech/nginx.png",
     "description": "Web server also used as reverse proxy."
+  },
+  {
+    "name": "Zimbra",
+    "icon": "/images/tech/zimbra.png",
+    "description": "Collaboration suite with email, calendar, and more."
   }
 ]
