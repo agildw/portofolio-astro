@@ -1,40 +1,16 @@
-# Astro Starter Kit: Basics
+# Welcome to My Portofolio!
 
-```sh
-npm create astro@latest -- --template basics
-```
+Hello there! 👋 I'm Agil, and this is my personal playground on the web — a portfolio crafted with Astro, sprinkled with React magic, and styled using the winds of Tailwind CSS. Here, you can see what I've been up to, from coding adventures to creative experiments.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Why Is This Site Awesome? 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This isn't just any portfolio; it's a vibrant space that showcases my journey as a developer and a designer. Using Astro for an ultra-fast experience, ReactJS for those dynamic, interactive elements, and Tailwind CSS for that sleek, custom look, this website is like a party on the internet, and you're invited!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tech Stack Party 🎉
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+- **Astro**: Fast, lightweight, and modern. Like a spaceship for your web content!
+- **ReactJS**: Handling state and props like a boss, making sure this portfolio is as interactive as a video game.
+- **Tailwind CSS**: Why write CSS when you can configure it? Tailwind lets me style faster than I can say "compiled!"
 
 ## 🧞 Commands
 
@@ -48,7 +24,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
