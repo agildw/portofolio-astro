@@ -13,11 +13,11 @@ const projects = getProjects();
   <div class="flex flex-col h-screen">
     <Navbar client:only="react" />
     <div
-      class="grid grid-cols-1 md:grid-cols-2 w-full p-4 max-w-screen-xl mx-auto md:gap-10 md:justify-center md:items-center md:space-y-12 h-screen"
+      class="grid grid-cols-1 md:grid-cols-2 w-full p-4 max-w-screen-xl mx-auto md:gap-10 md:justify-center md:items-center md:space-x-12 md:h-screen"
     >
-      <div class="w-full h-96 relative p-4">
+      <div class="w-full h-96 p-4">
         <Image
-          src="/images/blush-bg.png"
+          src="/images/white-bg.png"
           alt="Projects"
           width={400}
           height={400}
@@ -27,12 +27,12 @@ const projects = getProjects();
         />
       </div>
       <div class="flex flex-col">
-        <p class="text-2xl mt-4 text-gray-800">Projects</p>
+        <p class="text-2xl text-gray-800">Projects</p>
         <Divider />
         <!-- <div class="w-full h-1 bg-pastel-pink rounded-full my-2"></div> -->
         <!-- make projects scrollable if height exceed container, but the height must be to bottom of the page -->
         <div
-          class="grid grid-cols-1 gap-4 mt-6 overflow-y-auto h-96 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+          class="grid grid-cols-1 gap-2 mt-6 overflow-y-auto h-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
         >
           {
             projects.map((project) => (
@@ -66,13 +66,14 @@ const projects = getProjects();
   const projectsEl = document.querySelectorAll(".project");
   // on hover to project, change the thumbnail
   projectsEl.forEach((project) => {
+    // project.addEventListener("mouseover", () => {
     project.addEventListener("mouseover", () => {
       thumbnail.src = project.getAttribute("data-src") || "";
       anime({
         targets: thumbnail,
-        scale: 1.1,
-        // opacity: [0, 1],
-        duration: 500,
+        // scale: 1.1,
+        opacity: [0, 1],
+        duration: 1000,
         easing: "easeInOutSine",
       });
 
@@ -94,13 +95,14 @@ const projects = getProjects();
 
     // on mouseout, reset the thumbnail to default
     project.addEventListener("mouseout", () => {
-      thumbnail.src = "/images/blush-bg.png";
+      thumbnail.src = "/images/white-bg.png";
       // animate fade out
       anime({
         targets: thumbnail,
-        scale: 1,
-        // opacity: 1,
-        duration: 500,
+        // scale: 1,
+        opacity: 0,
+        // opacity: [1, 0],
+        duration: 1000,
         easing: "easeInOutSine",
       });
 
@@ -121,4 +123,9 @@ const projects = getProjects();
       if (arrow) arrow.classList.remove("hidden");
     });
   });
+
+  // if this is mobile, set thumbnail to /images/blush-bg.png, but it should be only once
+  if (window.innerWidth < 768) {
+    thumbnail.src = "/images/blush-bg.png";
+  }
 </script>
