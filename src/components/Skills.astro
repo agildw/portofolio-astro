@@ -1,0 +1,52 @@
+---
+import { getFamiliarSkills } from "../utils";
+import { getMainSkills } from "../utils";
+import Divider from "./UI/Divider.astro";
+import SkillIcon from "./UI/SkillIcon.astro";
+
+const mainSkills = getMainSkills();
+const familiarSkills = getFamiliarSkills();
+---
+
+<div
+  class="flex flex-col justify-center items-center space-y-24 my-40 max-w-screen px-6"
+>
+  <div class="flex flex-col space-y-4 justify-center items-center">
+    <p class="text-xl text-gray-800 text-center">I mainly focus with</p>
+    <div class="w-16">
+      <Divider />
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center space-x-8">
+      {
+        mainSkills.map((skillset) => (
+          <SkillIcon
+            name={skillset.name}
+            icon={skillset.icon}
+            description={skillset.description}
+            className="my-4"
+          />
+        ))
+      }
+    </div>
+  </div>
+  <div class="flex flex-col space-y-4 justify-center items-center">
+    <p class="text-xl text-gray-800 text-center">I am familiar with</p>
+    <div class="w-16">
+      <Divider />
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center space-x-8">
+      {
+        familiarSkills.map((skillset) => (
+          <SkillIcon
+            name={skillset.name}
+            icon={skillset.icon}
+            description={skillset.description}
+            className="my-4"
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>

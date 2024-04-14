@@ -1,0 +1,124 @@
+---
+import { Image } from "astro:assets";
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
+import { getProjects } from "../utils";
+import ArrowRight from "../components/UI/ArrowRight.astro";
+import Divider from "../components/UI/Divider.astro";
+
+const projects = getProjects();
+---
+
+<Layout title="Agil | Projects">
+  <div class="flex flex-col h-screen">
+    <Navbar client:only="react" />
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 w-full p-4 max-w-screen-xl mx-auto md:gap-10 md:justify-center md:items-center md:space-y-12 h-screen"
+    >
+      <div class="w-full h-96 relative p-4">
+        <Image
+          src="/images/blush-bg.png"
+          alt="Projects"
+          width={400}
+          height={400}
+          class="w-full h-72 object-cover rounded-lg"
+          id="thumbnail"
+          style="transform-origin: center top;"
+        />
+      </div>
+      <div class="flex flex-col">
+        <p class="text-2xl mt-4 text-gray-800">Projects</p>
+        <Divider />
+        <!-- <div class="w-full h-1 bg-pastel-pink rounded-full my-2"></div> -->
+        <!-- make projects scrollable if height exceed container, but the height must be to bottom of the page -->
+        <div
+          class="grid grid-cols-1 gap-4 mt-6 overflow-y-auto h-96 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+        >
+          {
+            projects.map((project) => (
+              <a href={`/projects/${project.id}`}>
+                <div
+                  class="flex flex-col project cursor-pointer"
+                  id={project.id}
+                  data-src={project.thumbnail}
+                  data-identifier={project.id}
+                >
+                  <div class="flex flex-row space-x-6">
+                    <ArrowRight
+                      className={`hidden ${project.id} right-arrow`}
+                    />
+                    <p class="text-md text-gray-600">{project.name}</p>
+                  </div>
+                  <div class="w-full h-1 bg-gray-800 rounded-full my-2" />
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import anime from "animejs";
+  const thumbnail = document.getElementById("thumbnail") as HTMLImageElement;
+  const projectsEl = document.querySelectorAll(".project");
+  // on hover to project, change the thumbnail
+  projectsEl.forEach((project) => {
+    project.addEventListener("mouseover", () => {
+      thumbnail.src = project.getAttribute("data-src") || "";
+      anime({
+        targets: thumbnail,
+        scale: 1.1,
+        // opacity: [0, 1],
+        duration: 500,
+        easing: "easeInOutSine",
+      });
+
+      const arrow = document.querySelector(`.${project.id}.right-arrow`);
+
+      // fix arrow only animate once, i think its because of event listener, the animate called multiple times
+      if (arrow) {
+        arrow.classList.remove("hidden");
+        anime({
+          targets: arrow,
+          translateX: 10,
+          duration: 500,
+          easing: "easeInOutSine",
+          direction: "alternate",
+          loop: true,
+        });
+      }
+    });
+
+    // on mouseout, reset the thumbnail to default
+    project.addEventListener("mouseout", () => {
+      thumbnail.src = "/images/blush-bg.png";
+      // animate fade out
+      anime({
+        targets: thumbnail,
+        scale: 1,
+        // opacity: 1,
+        duration: 500,
+        easing: "easeInOutSine",
+      });
+
+      const arrow = document.querySelector(`.${project.id}`);
+      if (arrow) arrow.classList.add("hidden");
+    });
+
+    project.addEventListener("click", () => {
+      thumbnail.src = project.getAttribute("data-src") || "";
+
+      anime({
+        targets: thumbnail,
+        scale: 1.1,
+        duration: 3000,
+      });
+
+      const arrow = document.querySelector(`.${project.id}`);
+      if (arrow) arrow.classList.remove("hidden");
+    });
+  });
+</script>

@@ -1,0 +1,45 @@
+[
+  {
+    "name": "React",
+    "icon": "/images/tech/react.svg",
+    "description": "JavaScript library for user interfaces."
+  },
+  {
+    "name": "Next.js",
+    "icon": "/images/tech/nextjs.svg",
+    "description": "React framework for production.",
+    "width": 40
+  },
+  {
+    "name": "Express",
+    "icon": "/images/tech/express.png",
+    "description": "Minimal Node.js web application framework.",
+    "width": 40
+  },
+  {
+    "name": "Node.js",
+    "icon": "/images/tech/nodejs.svg",
+    "description": "JavaScript runtime on Chrome's V8 engine."
+  },
+  {
+    "name": "TypeScript",
+    "icon": "/images/tech/ts.svg",
+    "description": "Typed superset of JavaScript."
+  },
+  {
+    "name": "Go",
+    "icon": "/images/tech/golang.png",
+    "description": "Language for simple, reliable software.",
+    "width": 40
+  },
+  {
+    "name": "Python",
+    "icon": "/images/tech/python.svg",
+    "description": "High-level, general-purpose programming language."
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/images/tech/postgres.png",
+    "description": "Open source object-relational database system."
+  }
+]

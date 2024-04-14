@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import Button from "./UI/Button.astro";
+---
+
+<div
+  class="flex flex-col mb-8 p-4 justify-center md:flex-row md:items-center md:space-x-12"
+>
+  <div class="flex flex-col space-y-6" id="name">
+    <p class="text-3xl text-gray-800">Hello, I'm Agil</p>
+    <p class="text-4xl text-pastel-pink">Full-stack Developer</p>
+    <a href="/projects" class="hidden md:block">
+      <Button className="mt-6 mb-8">See my projects</Button>
+    </a>
+  </div>
+  <a href="/projects" class="md:hidden">
+    <Button className="mt-6 mb-8">See my projects</Button>
+  </a>
+
+  <Image
+    src="/images/profile.png"
+    alt="profile"
+    loading="lazy"
+    class="w-full h-auto mt-4 rounded-lg shadow-lg mt-8 md:w-80 md:w-80 lg:w-96 xl:w-96"
+    width={400}
+    height={400}
+    id="profile"
+  />
+</div>
+
+<script>
+  import anime from "animejs";
+
+  anime({
+    targets: "#name,a",
+    translateY: [-50, 0],
+    opacity: [0, 1],
+    duration: 1000,
+    easing: "easeInOutQuad",
+  });
+
+  anime({
+    targets: "#profile",
+    translateY: [50, 0],
+    opacity: [0, 1],
+    duration: 1000,
+    easing: "easeInOutQuad",
+  });
+</script>

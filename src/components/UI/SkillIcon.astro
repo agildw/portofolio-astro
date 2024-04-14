@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import "tippy.js/dist/tippy.css";
+import "tippy.js/themes/light.css";
+import "tippy.js/animations/shift-away-extreme.css";
+
+interface Props {
+  name: string;
+  description: string;
+  icon: string;
+  className?: string;
+}
+
+const { name, description, icon, className } = Astro.props;
+---
+
+<Image
+  src={icon}
+  alt={name}
+  width={64}
+  height={64}
+  class={`w-auto h-12 md:h-16 object-cover cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
+  loading="lazy"
+  data-tippy-content={`<p class="text-xxs"><b>${name}</b> : ${description}</p>`}
+  data-tippy-size="tiny"
+/>
+
+<script>
+  import tippy from "tippy.js";
+
+  tippy("[data-tippy-content]", {
+    animation: "shift-away-extreme",
+    theme: "light",
+    allowHTML: true,
+    touch: true,
+  });
+</script>

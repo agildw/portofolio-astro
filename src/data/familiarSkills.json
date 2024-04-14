@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Gin",
+    "icon": "/images/tech/gin.png",
+    "description": "Web framework in Go."
+  },
+  {
+    "name": "Git",
+    "icon": "/images/tech/git.png",
+    "description": "Distributed version-control system"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "/images/tech/tailwind.svg",
+    "description": "Utility-first framework for custom designs."
+  },
+  {
+    "name": "Material UI",
+    "icon": "/images/tech/mui.svg",
+    "description": "Customizable library for React apps."
+  },
+  {
+    "name": "Prisma ORM",
+    "icon": "/images/tech/prisma.png",
+    "description": "Database toolkit with auto-generated query builder."
+  },
+  {
+    "name": "Nginx",
+    "icon": "/images/tech/nginx.png",
+    "description": "Web server also used as reverse proxy."
+  }
+]

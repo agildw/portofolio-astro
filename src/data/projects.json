@@ -1,0 +1,392 @@
+[
+  {
+    "description": "Surel.io is a web application that allows users to send emails to their friends and family in the future. Users can write emails and schedule them to be sent at a later date. The application is built using Ruby on Rails and AngularJS.",
+    "id": "surel-io",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/fourth-return-405814.appspot.com/o/portofolio-astro%2Fsurel-io%2F487fJbsSGylTqeRHqwkQ.avif?alt=media&token=d811e50c-53d7-44a9-95fe-7186ec7358d9",
+      "https://firebasestorage.googleapis.com/v0/b/fourth-return-405814.appspot.com/o/portofolio-astro%2Fsurel-io%2FAorJtjCQpCBcZQotur7j.avif?alt=media&token=3dad96f1-1a31-4001-9084-ff648871e818",
+      "https://firebasestorage.googleapis.com/v0/b/fourth-return-405814.appspot.com/o/portofolio-astro%2Fsurel-io%2FeMeNpJlyTki7vJloBLIW.avif?alt=media&token=8e001d63-bae9-4761-ab1d-dc9a1592f85b"
+    ],
+    "name": "Surel.io",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "/images/tech/react.svg",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      },
+      {
+        "icon": "/images/tech/nodejs.svg",
+        "name": "Node.js",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+      },
+      {
+        "icon": "/images/tech/golang.png",
+        "name": "Golang",
+        "description": "Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software."
+      },
+      {
+        "icon": "/images/tech/react.svg",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      },
+      {
+        "icon": "/images/tech/nodejs.svg",
+        "name": "Node.js",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+      },
+      {
+        "icon": "/images/tech/golang.png",
+        "name": "Golang",
+        "description": "Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software."
+      },
+      {
+        "icon": "/images/tech/react.svg",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      },
+      {
+        "icon": "/images/tech/nodejs.svg",
+        "name": "Node.js",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+      },
+      {
+        "icon": "/images/tech/golang.png",
+        "name": "Golang",
+        "description": "Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software."
+      }
+    ],
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fourth-return-405814.appspot.com/o/portofolio-astro%2Fsurel-io%2FBp4OR4tTTuwWBy4eNi4p.avif?alt=media&token=a2658001-3e22-4fdc-ae19-d6e0748d99e0",
+    "url": "http://surel.io"
+  },
+  {
+    "description": "Toolbox surel.io is a web application that allows users to check dns, ip, and email. The application is built using Ruby on Rails and AngularJS.",
+    "id": "toolbox-surel-io",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "Toolbox surel.io",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Node.js",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Golang",
+        "description": "Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": "http://toolbox.surel.io"
+  },
+  {
+    "description": "Blogify is a content management system (CMS) for bloggers, offering features such as user authentication, post scheduling, and analytics tracking. Built with React, Node.js, and MongoDB, Blogify empowers bloggers to create and manage their online presence effortlessly.",
+    "id": "blogify",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "Blogify",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Node.js",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "MongoDB",
+        "description": "MongoDB is a general-purpose, document-based, distributed database built for modern application developers and for the cloud era."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "MarketWatch is a financial analytics platform designed for investors and traders. Utilizing real-time data feeds and advanced charting tools, MarketWatch helps users make informed investment decisions. Developed with Angular, Express.js, and PostgreSQL, MarketWatch delivers actionable insights to financial enthusiasts worldwide.",
+    "id": "marketwatch",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "MarketWatch",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Angular",
+        "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Express.js",
+        "description": "Express.js is a web application framework for Node.js, designed for building web applications and APIs."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "PostgreSQL",
+        "description": "PostgreSQL is a powerful, open-source object-relational database system with a strong reputation for reliability, feature robustness, and performance."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "Ecommerce360 is a comprehensive e-commerce solution tailored for small businesses. Featuring customizable storefronts, inventory management, and secure payment processing, Ecommerce360 simplifies online selling. Leveraging technologies like Vue.js, Django, and MySQL, Ecommerce360 empowers entrepreneurs to thrive in the digital marketplace.",
+    "id": "ecommerce360",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "Ecommerce360",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Vue.js",
+        "description": "Vue.js is a progressive JavaScript framework for building user interfaces."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Django",
+        "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "MySQL",
+        "description": "MySQL is an open-source relational database management system that is widely used for web applications."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "HealthTrackr is a health and fitness application that enables users to monitor their wellness journey. With features such as workout logging, meal tracking, and progress visualization, HealthTrackr promotes a healthy lifestyle. Crafted with React Native, Flask, and Firebase, HealthTrackr brings personalized fitness tracking to users' fingertips.",
+    "id": "healthtrackr",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "HealthTrackr",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "React Native",
+        "description": "React Native is a framework for building native applications using React."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Flask",
+        "description": "Flask is a lightweight WSGI web application framework in Python."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Firebase",
+        "description": "Firebase is a platform developed by Google for creating mobile and web applications."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "EventPlanner Pro is an event management platform designed for professional event organizers. From venue selection to guest list management, EventPlanner Pro streamlines the entire event planning process. Powered by Ember.js, Ruby on Rails, and Amazon Web Services (AWS), EventPlanner Pro ensures seamless execution of events of any scale.",
+    "id": "eventplanner-pro",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "EventPlanner Pro",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Ember.js",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Ruby on Rails",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Amazon Web Services (AWS)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "LearnHub is an online learning platform offering courses on various subjects, from programming to photography. With interactive lessons, quizzes, and progress tracking, LearnHub facilitates engaging and effective learning experiences. Developed using AngularJS, Laravel, and MongoDB, LearnHub empowers learners to acquire new skills at their own pace.",
+    "id": "learnhub",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "LearnHub",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "AngularJS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Laravel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "MongoDB",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "TravelMate is a travel planning application that assists users in organizing their trips efficiently. With features like itinerary management, expense tracking, and destination recommendations, TravelMate simplifies travel planning. Created with Vue.js, Express.js, and SQLite, TravelMate ensures hassle-free travel experiences for adventurers worldwide.",
+    "id": "travelmate",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "TravelMate",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Vue.js",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Express.js",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "SQLite",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "RecipeRadar is a recipe discovery platform that helps users explore new culinary delights. With a vast collection of recipes, personalized recommendations, and meal planning tools, RecipeRadar caters to food enthusiasts of all levels. Developed using React, Django, and PostgreSQL, RecipeRadar brings the joy of cooking to kitchens around the globe.",
+    "id": "reciperadar",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "RecipeRadar",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "React",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Django",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "PostgreSQL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "TaskMaster is a task management application designed to boost productivity and organization. With features like task categorization, priority setting, and deadline tracking, TaskMaster empowers users to stay on top of their to-do lists. Built with Vue.js, Flask, and MongoDB, TaskMaster simplifies task management for individuals and teams alike.",
+    "id": "taskmaster",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "TaskMaster",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Vue.js",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Flask",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "MongoDB",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  },
+  {
+    "description": "PetPals is a social networking platform for pet owners, connecting animal lovers worldwide. With features such as pet profiles, forums, and event listings, PetPals fosters a vibrant community of pet enthusiasts. Developed with React Native, Django, and Firebase, PetPals celebrates the bond between pets and their owners.",
+    "id": "petpals",
+    "images": [
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360",
+      "https://via.placeholder.com/360"
+    ],
+    "name": "PetPals",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "React Native",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Django",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "icon": "https://via.placeholder.com/50",
+        "name": "Firebase",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "thumbnail": "https://via.placeholder.com/360",
+    "url": ""
+  }
+]

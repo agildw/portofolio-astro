@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+import Navbar from "../../components/Navbar";
+import Layout from "../../layouts/Layout.astro";
+import { getProjects } from "../../utils";
+import Divider from "../../components/UI/Divider.astro";
+import Button from "../../components/UI/Button.astro";
+import Contact from "../../components/Contact";
+import SkillIcon from "../../components/UI/SkillIcon.astro";
+
+export async function getStaticPaths() {
+  const projects =  getProjects();
+
+  return projects.map((project) => ({
+    params: {
+      id: project.id,
+    },
+    props: project,
+  }));
+}
+
+const { id, name, thumbnail, description, url, repo, images,stack } = Astro.props;
+
+---
+
+<Layout title={name}>
+  <Navbar client:only="react" />
+  <div class="flex flex-col max-w-7xl mx-auto p-6 space-y-8 mb-20">
+    <Image
+      src={thumbnail}
+      alt="Thumbanil"
+      class="rounded-3xl w-screen h-72 object-cover md:h-96 lg:h-[26rem] xl:h-[36rem]"
+      width={400}
+      height={400}
+    />
+    <div class="flex flex-col space-y-4">
+      <h1 class="text-3xl text-gray-800">{name}</h1>
+      <Divider />
+      <div class="flex flex-row justify-between">
+        <p class="text-gray-500 text-xs mb-4">{id}</p>
+      </div>
+      <p class="text-gray-600 text-md leading-loose">{description}</p>
+
+      <div class="flex flex-col space-y-4 md:space-row md:space-x-4">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <!-- <span> Visit Website </span>
+        <ExternalLink width={16} height={16} /> -->
+        <Button>Visit Website</Button>
+      </a>
+
+      {repo && (
+        <a href={repo} target="_blank" rel="noopener noreferrer">
+            <!-- <span> View Source Code </span>
+            <ExternalLink width={16} height={16} /> -->
+            <Button>View Source Code</Button>
+        </a>
+      )}
+      </div>
+
+
+      <div class="flex flex-col space-y-4 justify-center items-center">
+        <p class="text-gray-800 text-lg mt-8">Tech Stack</p>
+        <div class="flex flex-row space-x-4 md:space-x-6 flex-wrap justify-center items-center">
+        {stack.map((tech) => (
+          <SkillIcon name={tech.name} icon={tech.icon} description={tech.description} className="my-2"/>
+        ))}
+        </div>
+
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-4">
+        <p class="text-gray-800 text-lg mt-12 ">Screenshots</p>
+        <div class="flex flex-col space-y-4 md:space-y-6">
+        {
+          images.map((image) => (
+            <div class="w-full h-full">
+              <Image
+                src={image}
+                alt="Screenshot"
+                class=" object-cover w-screen "
+                width={400}
+                height={400}
+              />
+            </div>  
+          ))
+        }
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  <Contact/>
+</Layout>
