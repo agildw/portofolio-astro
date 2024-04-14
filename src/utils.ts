@@ -4,6 +4,7 @@ import familiarSkills from "./data/familiarSkills.json";
 
 export interface Project {
   id: string;
+  year: string;
   name: string;
   description: string;
   images: string[];
