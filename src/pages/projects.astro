@@ -64,9 +64,8 @@ const projects = getProjects();
   import anime from "animejs";
   const thumbnail = document.getElementById("thumbnail") as HTMLImageElement;
   const projectsEl = document.querySelectorAll(".project");
-  // on hover to project, change the thumbnail
+
   projectsEl.forEach((project) => {
-    // project.addEventListener("mouseover", () => {
     project.addEventListener("mouseover", () => {
       thumbnail.src = project.getAttribute("data-src") || "";
       anime({
@@ -79,7 +78,7 @@ const projects = getProjects();
 
       const arrow = document.querySelector(`.${project.id}.right-arrow`);
 
-      // fix arrow only animate once, i think its because of event listener, the animate called multiple times
+      // todo: fix arrow only animate once.
       if (arrow) {
         arrow.classList.remove("hidden");
         anime({
@@ -96,7 +95,6 @@ const projects = getProjects();
     // on mouseout, reset the thumbnail to default
     project.addEventListener("mouseout", () => {
       thumbnail.src = "/images/white-bg.png";
-      // animate fade out
       anime({
         targets: thumbnail,
         // scale: 1,
@@ -124,7 +122,6 @@ const projects = getProjects();
     });
   });
 
-  // if this is mobile, set thumbnail to /images/blush-bg.png, but it should be only once
   if (window.innerWidth < 768) {
     thumbnail.src = "/images/blush-bg.png";
   }
