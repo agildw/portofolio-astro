@@ -16,10 +16,6 @@ const socials = [
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/agildw/",
   },
-  {
-    title: "Instagram",
-    url: "https://instagram.com/agldw",
-  },
 ];
 
 const Spotify = () => {
