@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Hi there! I'm [Your Name], and this is my portfolio built using Astro, with interactive elements powered by ReactJS and styled with Tailwind CSS. This website is a showcase of my work and projects.
+Hi there! I'm Agil Dwiki Yudistira, and this is my portfolio built using Astro, with interactive elements powered by ReactJS and styled with Tailwind CSS. This website is a showcase of my work and projects.
 
 ## About This Project
 
