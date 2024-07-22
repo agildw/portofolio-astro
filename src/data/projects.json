@@ -101,5 +101,38 @@
     ],
     "thumbnail": "/images/projects/peladen/thumbnail.png",
     "url": "https://console.peladen.io"
+  },
+  {
+    "url": "https://siamal.turu.dev",
+    "description": "Siamal is a user-friendly online donation platform designed to streamline the process of giving to charitable causes. It provides a secure and convenient way for donors to contribute to campaigns, while offering administrators a powerful dashboard to manage donations and campaign details.",
+    "id": "siamal",
+    "images": [
+      "/images/projects/siamal/1.png",
+      "/images/projects/siamal/2.png",
+      "/images/projects/siamal/3.png",
+      "/images/projects/siamal/4.png",
+      "/images/projects/siamal/5.png"
+    ],
+    "name": "Siamal",
+    "repo": "",
+    "stack": [
+      {
+        "icon": "/images/tech/nextjs.svg",
+        "name": "Next.js",
+        "description": "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications."
+      },
+      {
+        "icon": "/images/tech/postgres.png",
+        "name": "Postgres",
+        "description": "Postgres is a powerful, open-source object-relational database system."
+      },
+      {
+        "icon": "/images/tech/react.svg",
+        "name": "React",
+        "description": "React is a JavaScript library for building user interfaces."
+      }
+    ],
+    "thumbnail": "/images/projects/siamal/thumbnail.png",
+    "year": "2024"
   }
 ]
